@@ -1,0 +1,31 @@
+@import './base.scss';
+
+.full-modal {
+  .ant-modal {
+    max-width: 100%;
+    top: 0;
+    right: 0;
+    padding-bottom: 0;
+    margin: 0;
+  }
+  .ant-modal-content {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+  }
+  .ant-modal-body {
+    flex: 1;
+  }
+}
+
+.work-break {
+  word-break: break-all;
+}
+
+[data-doc-theme='light'] .ant-table-striped :deep(.table-striped-red) td {
+  background-color: red; /* Change to red background color */
+}
+[data-doc-theme='dark'] .ant-table-striped :deep(.table-striped-red) td {
+  background-color: red; /* Change to red background color */
+}
